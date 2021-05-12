@@ -1,0 +1,85 @@
+:root {
+    --bg-color-light: white;
+    --bg-color-dark: black;
+    --font-color-light: black;
+    --font-color-dark: white;
+    --accent-color: rgb(226 78 66 / 80%);
+    --font-family-primary: 'Inter', sans-serif;
+    --font-family-secondary: 'EB Garamond', serif;
+}
+
+body {
+    background-color: var(--bg-color-light);
+    color: var( --font-color-light);
+    font-family: var( --font-family-primary);
+    font-size: 16px;
+    line-height: 1.6em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+header {
+    font-family: var( --font-family-secondary);
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons {
+    display: flex;
+}
+
+#icons img {
+    margin: 5px 10px;
+}
+
+nav {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+nav>span {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var( --font-color-light);
+}
+
+h1, h2, h3 {
+    font-family: var( --font-family-secondary);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-weight: 600;
+    box-shadow: 0px 8px 0px var(--accent-color);
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+
+h1 #ingaavu {
+    font-style: italic;
+    font-weight: 400;
+}
+main{
+    max-width: 750px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #icons {
+        display: none;
+    }
+}

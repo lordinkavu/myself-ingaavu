@@ -1,0 +1,24 @@
+{
+  "name": "myself.ingaavu",
+  "version": "1.0.0",
+  "description": "A collection of thoughts, ideas and learnings.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordinkavu/myself-ingaavu.git"
+  },
+  "author": "gautham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordinkavu/myself-ingaavu/issues"
+  },
+  "homepage": "https://github.com/lordinkavu/myself-ingaavu#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
