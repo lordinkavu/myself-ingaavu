@@ -6,6 +6,7 @@
     --accent-color: rgb(226 78 66 / 80%);
     --font-family-primary: 'Inter', sans-serif;
     --font-family-secondary: 'EB Garamond', serif;
+    text-size-adjust: none;
 }
 
 body {
