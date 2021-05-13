@@ -1,6 +1,6 @@
 ---
 title: Epiphany
-tags: ['poem','post','writings']
+tags: poem
 ---
 
 ## Epiphany

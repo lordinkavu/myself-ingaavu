@@ -1,6 +1,6 @@
 ---
-title: Punaar Puli - A Memoir.
-tags: ['memoir','post','writings']
+title: Punaar Puli - A Memoir
+tags: prose
 ---
 
 ## Punaar Puli - A Memoir.

@@ -1,6 +1,6 @@
 ---
-title: The naughty, stubborn one.
-tags: ['memoir','post','writings']
+title: The naughty, stubborn one
+tags: prose
 ---
 ## The naughty, stubborn one.
 

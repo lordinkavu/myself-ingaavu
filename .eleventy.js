@@ -1,11 +1,9 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setTemplateFormats([
-    "md",
-    "css",
-    "html",
-    "njk",
-    "svg", // css is not yet a recognized template extension in Eleventy
-  ]);
+  eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addFilter("filterTagList", tags => {
+    // should match the list in tags.njk
+    return (tags || []).filter(tag => ["post", "note",].indexOf(tag) === -1);
+  })
   return {
     markdownTemplateEngine: "njk",
   };
