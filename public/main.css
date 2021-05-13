@@ -7,6 +7,7 @@
     --font-family-primary: 'Inter', sans-serif;
     --font-family-secondary: 'EB Garamond', serif;
     text-size-adjust: none;
+    font-size: 16px;
 }
 
 body {
@@ -18,9 +19,9 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 10px;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    padding: 0.625rem 1.5625rem;
 }
 
 header {
@@ -35,7 +36,7 @@ header {
 }
 
 #icons img {
-    margin: 5px 10px;
+    margin: 0.3125rem 0.625rem;
 }
 
 nav {
@@ -46,8 +47,8 @@ nav {
 nav>span {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0.3125rem;
+    margin-right: 0.3125rem;
 }
 
 a {
@@ -65,9 +66,9 @@ h1 {
     font-size: 2.25rem;
     font-weight: 600;
     box-shadow: 0px 8px 0px var(--accent-color);
-    margin-top: 25px;
-    margin-bottom: 50px;
-    padding: 5px;
+    margin-top: 1.5625rem;
+    margin-bottom: 3.125rem;
+    padding: 0.3125rem;
 }
 
 h1 #ingaavu {
@@ -75,7 +76,8 @@ h1 #ingaavu {
     font-weight: 400;
 }
 main{
-    max-width: 750px;
+    max-width: 650px;
+  
 }
 
 
