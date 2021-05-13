@@ -9,7 +9,7 @@ _Cheers!_
 ## Posts
 
 {%- for post in collections.post %}
- - [{{ post.data.title}} \[{{post.date.toLocaleDateString("en-US",{ year: 'numeric', month: 'long', day: 'numeric' })}}\]]({{post.url}})
+- [{{ post.data.title}} \[{{post.date.toLocaleDateString("en-US",{ year: 'numeric', month: 'long', day: 'numeric' })}}\]]({{post.url}})
 {%- endfor %}
 
 

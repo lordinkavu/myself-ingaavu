@@ -52,9 +52,15 @@ nav>span {
 }
 
 a {
-    text-decoration: none;
+    text-decoration-color: rgba(165, 42, 42, 0.5);
     color: var( --font-color-light);
+    text-underline-offset: 0.1875rem;
+    
+
 }
+
+
+
 
 h1, h2, h3 {
     font-family: var( --font-family-secondary);
