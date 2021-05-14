@@ -11,6 +11,7 @@
 <body> 
 <header>
   <nav> 
+    <div >
     <a href="/" >Home</a>
     <span>/</span>
     <a href="/writings">Writings</a>
@@ -18,19 +19,30 @@
     <a href="/brain">Brain</a>
     <span>/</span>
     <a href="/works">Works</a>
-  </nav>
- 
-  <div id="icons">
+    </div>
+    <div class="icons">
     <img src = "/public/icons/github.svg" alt="github"/>
     <img src = "/public/icons/linkedin.svg" alt="linkedin"/> 
     <img src = "/public/icons/file-text.svg" alt="resume"/>
   </div>
+  
+  </nav>
+ <h1>Myself, <span id="ingaavu">Ingaavu.</span></h1>
+  
   </header>
-  <h1>Myself, <span id="ingaavu">Ingaavu.</span></h1>
+  
 
   <main> 
     {{ content | safe }}
   </main> 
+  <footer> 
+  <div>© Gautham Shankar </div>
+  <div class="icons">
+    <img src = "/public/icons/github.svg" alt="github"/>
+    <img src = "/public/icons/linkedin.svg" alt="linkedin"/> 
+    <img src = "/public/icons/file-text.svg" alt="resume"/>
+  </div>
+  </footer>
    
 </body> 
 </html>
