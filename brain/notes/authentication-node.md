@@ -3,7 +3,7 @@ title: Authentication in NodeJS
 tags: programming
 ---
 ## Authentication in NodeJS
-#### Set up a basic express server.
+### Set up a basic express server.
 
 ```
 const express = require('express');
@@ -20,7 +20,7 @@ app.listen(port,() => console.log(`Listening on port ${port}`));
 
 ```
 
-#### Configure express-session middleware
+### Configure express-session middleware
 
 What does express-session do ->
 1. Checks of incoming request from client has a cookie with session id. If not it'll create a unique  session id is a 24 character base64 string created using ``utils.uid(24)``  . This is attached to the request and sent back to client in the response. 

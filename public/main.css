@@ -123,7 +123,7 @@ pre code {
     white-space: pre;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
-    max-width: 300px;
+    max-width: 600px;
    
     padding: 0;
   }
@@ -163,6 +163,9 @@ pre code {
 @media screen and (max-width: 600px) {
     .icons {
         display: none;
+    }
+    pre code{
+        max-width: 300px;
     }
     
     
