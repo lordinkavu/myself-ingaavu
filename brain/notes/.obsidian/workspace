@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "57e0564f4269d46a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fc1c1b95613041c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "cookies.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2c88af3637c8be3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f859c742f46a3de5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a717161f2530ee36",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ab5a0c38550d35b2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "75ab608ee499b780",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd843148913e1f70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69d16f80d3ef7edd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "cookies.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2fc1c1b95613041c",
+  "lastOpenFiles": [
+    "cookies.md",
+    "authentication-node.md",
+    "pointers-and-memory.md",
+    "linkedlists.md",
+    "Untitled.md"
+  ]
+}

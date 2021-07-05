@@ -20,3 +20,4 @@
 18. [Wings of Fire: An Autobiography](https://www.goodreads.com/book/show/634583.Wings_of_Fire)
 19. [When Breath Becomes Air](https://www.goodreads.com/book/show/25899336-when-breath-becomes-air)
 20. [Shoe Dog: A Memoir by the Creator of Nike](https://www.goodreads.com/book/show/27220736-shoe-dog)
+21. [Steve Jobs By Walter Issacson](https://www.goodreads.com/book/show/11084145-steve-jobs)
