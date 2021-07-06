@@ -3,6 +3,9 @@ title: Authentication in NodeJS
 tags: programming
 ---
 ## Authentication in NodeJS
+
+_These are study notes and the code hasn't been tested. But the concept is solid_
+
 ### Set up a basic express server.
 
 ```
@@ -54,9 +57,157 @@ Here we have set up our app to use express-session middleware.
 ``saveUninitialised`` is set to ``false`` so that empty sessions are not stored in session store.
 ``resave`` is set to ``false`` so that session store is not overwritten if session object is not modified.
 
-*To be continued*
+### Configure server to parse incoming post request data
+Here we are using ``express.json`` and ``express.urlencoded`` middleware to parse request data and url encoded form data respectively.  The ``extendeed`` property in  ``express.urlencoded`` specifies if we need to use the more powerful qs library or the simpler querystring library to deserialise the form data encoded in url and convert it to JSON. 
+
+The post request data would now be availble in ``req.body`` 
+
+```
+const express = require('express');
+const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
+const session = require('express-session');
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
+app.use(session({
+	secret:"some random string",
+	resave:false,  
+	saveUninitialised:false
+}))
+
+app.get('/',(req,res) => {
+	res.sendStatus(200);
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port,() => console.log(`Listening on port ${port}`));
+```
+
+### Set up login routes
+
+```
+const express = require('express');
+const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
+const session = require('express-session');
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+app.use(session({
+	secret:"some random string",
+	resave:false,  
+	saveUninitialised:false
+}));
+
+app.get('/auth/login',(req,res)=>{
+	res.sendStatus(200);
+})
+
+app.post('/auth/login',(req,res)=>{
+	res.sendStatus(200);
+})
+
+app.get('/',(req,res) => {
+	res.sendStatus(200);
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port,() => console.log(`Listening on port ${port}`));
+
+```
+
+### Add and configure passportJS
+Passport is an authentication middleware. We initialise the middleware by using `passport.initialise()` use `passport.session()` for persistent login sessions.
+
+The method for authentication is specified by 'strategy'. Here we employ a simple username and password based authentication using 'local' strategy. For this we have to include passport-local library. Similarly we have passport-facebook, passport-google-oath etc for the corresponding authentication strategies.
+
+Configure passport to use local strategy using the strategy object from passport-local. 
+We include the user validation function insidide the strategy configuration. The validation function should check the submitted data agianst our database and return the user object if the data is correct. The different errors are also handled. The user detail is serialised into the session store using `passport.serailzeUser`.  
+
+We use `passport.authenticate` middleware inside the login route to pass the user submitted details to local strategy configuration. It gets validated and if user exists, the user id is mapped to session id in the session store. The user object is added to request. if validation fails, the client is redirected to login page.
+
+If we need the user data for subsequent requests, the `passport.deserailze` function provides the user details by fetching it from DB. We don't need to login again while the session persists.
+
+`req.isAuthenticated()`  returns true if the user is authenticated. This can be used for authorisation of certain routes.
+
+```
+const express = require('express');
+const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
+const session = require('express-session');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+app.use(session({
+	secret:"some random string",
+	resave:false,  
+	saveUninitialised:false
+}));
+
+app.use(passport.initialise());
+app.use(passport.session());
 
 
+
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+  // below code is just a skelton code
+  // replace it with actual helper functions
+    User.findOne({ username: username }, function (err, user) {
+      if (err) { return done(err); }
+      if (!user) { return done(null, false); }
+      if (!user.verifyPassword(password)) { return done(null, false); }
+      return done(null, user);
+    });
+  }
+));
+
+passport.serializeUser(function(user, done) {
+	// skelton code. Saves user id in session store
+    done(null, user.id);
+});  
+
+passport.deserializeUser(function(id, done) {
+	// skelton code. uses id in session store to fetch user from database
+    User.findById(id, function(err, user) {
+        done(err, user);
+    });
+});
+
+
+app.get('/auth/login',(req,res)=>{
+	res.sendStatus(200);
+})
+
+app.post('/auth/login',
+		 passport.authenticate('local',			
+   				{failureRedirect:'/auth/login'}),
+		 (req,res)=>{
+			res.redirect('/');
+});
+
+app.get('/',(req,res) => {
+	res.sendStatus(200);
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port,() => console.log(`Listening on port ${port}`));
+
+```
+
+
+
+### Remaining
+1. Sign up routes.
+2. Password salting and hashing.
+3. Password reset.
 
 
 

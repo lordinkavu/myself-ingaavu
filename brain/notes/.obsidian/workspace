@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cookies.md",
+            "file": "authentication-node.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 198
   },
   "right": {
     "id": "75ab608ee499b780",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cookies.md",
+                "file": "authentication-node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,11 @@
   },
   "active": "2fc1c1b95613041c",
   "lastOpenFiles": [
-    "cookies.md",
     "authentication-node.md",
+    "sorting - cpp.md",
+    "Untitled.md",
+    "cookies.md",
     "pointers-and-memory.md",
-    "linkedlists.md",
-    "Untitled.md"
+    "linkedlists.md"
   ]
 }
