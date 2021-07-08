@@ -17,7 +17,7 @@ tags: programming,javascript
  
 JavaScript hoists variables declared with es6 `let` and `const`. The difference in this case is how it initialises them. Variables declared with `let` and `const` remain uninitialised at the beginning of execution whilst variables declared with `var` are initialised with a value of undefined.
  
- let, const -> block scoped
+ let, const -> block scoped      
  var -> function scoped
  
  #### Function hoisting ->

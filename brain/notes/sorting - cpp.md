@@ -65,5 +65,46 @@ void selectionSort(int arr[], int n){
 
 Insertion sort ->
 ```
+void insertionSort(int arr[], int n)
+    {
+        for(int i=1;i<n;++i){
+            int k=i;
+            int temp = arr[i];
+            while(k>0 && temp<arr[k-1]){
+                arr[k]=arr[k-1];
+                k--;
+            }
+            arr[k]=temp;
+            
+        }
+    }
 
+```
+
+merge sort ->
+```
+ vector<int> merge(vector<int>& nums, int beg, int end){
+        
+        vector<int> vec;
+        for(int i=beg;i<=end;++i) vec.push_back(nums[i]);
+        if(vec.size()==1) return vec;
+        int m = (vec.size()-1)/2;
+        vector<int> left = merge(vec,0,m);
+        vector<int> right = merge(vec,m+1,vec.size()-1);
+        int li=0,ri=0,p=0;
+        while(li<left.size() && ri<right.size()){
+            if (left[li] <= right[ri]){
+                vec[p++]=left[li++];
+            }else if(right[ri]<left[li]){
+                vec[p++]=right[ri++];
+            }
+        }
+        while(li<left.size()){
+            vec[p++]=left[li++];
+        }
+        while(ri<right.size()){
+            vec[p++]=right[ri++];
+        }
+        return vec;
+    }
 ```
