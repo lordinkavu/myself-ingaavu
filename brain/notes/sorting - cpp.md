@@ -108,3 +108,35 @@ merge sort ->
         return vec;
     }
 ```
+time complexity -> O(nlogn)
+space complexity -> O(n)
+
+quick sort ->
+```
+int partition(int arr[],int low,int high){
+	int pivot = arr[high];
+	int pIndex = low;
+	for(int i=low;i<end;i++){
+		if(arr[i]<=pivot){
+			swap(arr[i],arr[pIndex]);
+			pIndex++;
+		}
+	}
+	swap(arr[high],arr[pIndex]);
+	return pIndex;
+}
+
+void quickSort(int arr[], int low, int high)
+{
+    
+    if(low>=high) return;
+    int pIndex = partition(arr,low,high);
+    quickSort(arr,low,pIndex-1);
+    quickSort(arr,pIndex+1,high);
+ 
+}
+
+```
+O(nlogn) average time complexity
+O(n^2) worst case time complexity
+In-place 
