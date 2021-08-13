@@ -108,8 +108,8 @@ merge sort ->
         return vec;
     }
 ```
-time complexity -> O(nlogn)
-space complexity -> O(n)
+time complexity -> `O(nlogn)`   
+space complexity -> `O(n)`
 
 quick sort ->
 ```
@@ -137,6 +137,6 @@ void quickSort(int arr[], int low, int high)
 }
 
 ```
-O(nlogn) average time complexity
-O(n^2) worst case time complexity
-In-place 
+`O(nlogn)` average time complexity.   
+`O(n^2)` worst case time complexity.   
+In-place algorithm.

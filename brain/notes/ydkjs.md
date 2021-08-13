@@ -17,8 +17,8 @@ tags: programming,javascript
  
 JavaScript hoists variables declared with es6 `let` and `const`. The difference in this case is how it initialises them. Variables declared with `let` and `const` remain uninitialised at the beginning of execution whilst variables declared with `var` are initialised with a value of undefined.
  
- let, const -> block scoped      
- var -> function scoped
+ `let`, `const` -> block scoped      
+ `var` -> function scoped
  
  #### Function hoisting ->
  
@@ -30,7 +30,7 @@ function hoisted(){
 }
 ```
  
- Here, a variable hoisted is declared at the top of the scope and assigned a function value at the same time => 
+ Here, a variable hoisted is declared at the top of the scope and assigned a function value at the same time ->
  ```
 var hoisted = function(){
 ....
@@ -51,7 +51,7 @@ var expression = function() {
  
 Compiation doesn't reserve memory space or anything for the variables / functions. It just creates a map with details of all the scopes and the variables associated with it.  
 
----
+
  
  
  

@@ -17,7 +17,7 @@ response.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
 external parties may intercept cookie data by gaining access to client side storage or intercepting the client requests.
 
 How to make cookies secure ? by adding *secure* and *httpOnly* attributes.
-secure -> send cookie data to server only over https connections. This ensures that  the data is encrypted.
+secure -> send cookie data to server only over https connections. This ensures that  the data is encrypted.    
 httpOnly -> access to cookies is not possible via javascript APIs.
 
 
