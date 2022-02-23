@@ -4,33 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="/public/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter&display=swap"
-      rel="stylesheet">
-    <title>Myself, Ingaavu.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=JetBrains+Mono:ital,wght@0,200;0,800;1,200&display=swap" rel="stylesheet">
+    <title>Gautham</title>
   </head>
   <body>
     <header>
+      <a id="brand-name" href="/">
+        <div>Gautham </div>
+        <div id="square"></div>
+
+      </a>
       <nav>
-        <div>
-          <a href="/">Home</a>
-          <span>/</span>
-          <a href="/writings">Writings</a>
-          <span>/</span>
-          <a href="/brain">Brain</a>
-          <span>/</span>
-          <a href="/works">Works</a>
-        </div>
-        <div class="icons">
-          <a href="https://github.com/lordinkavu/" target="_blank" rel="noreferrer"><img src="/public/icons/github.svg" alt="github"/> </a>
-          <a href="https://www.linkedin.com/in/gauthamskv/" target="_blank" rel="noreferrer"><img src="/public/icons/linkedin.svg" alt="linkedin"/>
-          </a>
-        </div>
+
+        <a href="/">Home</a>
+
+        <a href="/writings">Writings</a>
+
+        <a href="/brain">Brain</a>
+
+        <a href="/works">Works</a>
+
       </nav>
-      <h1>Myself,
-        <span id="ingaavu">Ingaavu.</span>
-      </h1>
     </header>
     <main>
       {{ content | safe }}
@@ -39,7 +35,8 @@
       <div>© Gautham Shankar
       </div>
       <div class="icons">
-        <a href="https://github.com/lordinkavu/" target="_blank" rel="noreferrer"><img src="/public/icons/github.svg" alt="github"/> </a>
+        <a href="https://github.com/lordinkavu/" target="_blank" rel="noreferrer"><img src="/public/icons/github.svg" alt="github"/>
+        </a>
         <a href="https://www.linkedin.com/in/gauthamskv/" target="_blank" rel="noreferrer"><img src="/public/icons/linkedin.svg" alt="linkedin"/>
         </a>
       </div>
