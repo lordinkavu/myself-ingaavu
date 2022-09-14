@@ -1,4 +1,3 @@
-@import url('https://rsms.me/inter/inter.css');
 :root {
   --bg-color-light: white;
   --bg-color-dark: black;
@@ -126,7 +125,6 @@ nav > a:active {
 
 main {
   flex: 1;
-  max-width: 650px;
 }
 
 .project-header {
