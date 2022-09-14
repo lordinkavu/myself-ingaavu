@@ -4,9 +4,9 @@
   "description": "A collection of thoughts, ideas and learnings.",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy --formats=md,svg,jpg,jpeg,njk,css",
-    "serve": "npx eleventy --serve --formats=md,svg,jpg,jpeg,njk,css",
-    "debug": "DEBUG=* npx eleventy --formats=md,svg,jpg,jpeg,njk,css"
+    "build": "npx eleventy --formats=md,svg,jpg,jpeg,njk,css,webp",
+    "serve": "npx eleventy --serve --formats=md,svg,jpg,jpeg,njk,css,webp",
+    "debug": "DEBUG=* npx eleventy --formats=md,svg,jpg,jpeg,njk,css,webp"
   },
   "repository": {
     "type": "git",
