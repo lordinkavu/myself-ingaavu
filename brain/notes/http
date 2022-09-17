@@ -14,6 +14,8 @@ HTTP 1.1 not encrypted. HTTPS is encrypted communication.
 3. Read the response message : Consist of HTTP version, status code, status message, HTTP headers, response body. 
 4. Close / reuse connection.
 
+Note : Look up networking zine https://jvns.ca/networking-zine.pdf
+
 _Want to learn_
 
 - HTTP headers 
