@@ -1,0 +1,9 @@
+---
+title: HTTP/HTTPS
+tags: programming
+---
+
+## HTTP
+Internet protocol for communication b/w a web server and client (mostly the browser ). Client _requests_, server _responds_.
+Proxies may be used to relay messages.
+
