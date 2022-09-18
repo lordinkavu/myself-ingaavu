@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "jwt.md",
-            "mode": "source"
+            "file": "cookies.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "jwt.md",
+                "file": "cookies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,14 +89,15 @@
   },
   "active": "2fc1c1b95613041c",
   "lastOpenFiles": [
+    "ydkjs.md",
+    "sorting - cpp.md",
+    "server-setup.md",
+    "pointers-and-memory.md",
+    "linkedlists.md",
     "jwt.md",
     "cookies.md",
-    "sorting - cpp.md",
-    "ydkjs.md",
     "react hooks.md",
-    "pointers-and-memory.md",
     "Untitled.md",
-    "linkedlists.md",
     "authentication-node.md"
   ]
 }
