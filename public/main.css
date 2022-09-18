@@ -139,6 +139,9 @@ main {
 .project-header > span {
   margin-left: 00.625rem;
 }
+code {
+  font-family: 'Fira Code', monospace;
+}
 
 pre code {
   display: block;
@@ -147,7 +150,7 @@ pre code {
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   max-width: 600px;
-  font-family: 'Fira Code', monospace;
+
   padding: 5px;
 }
 footer {
