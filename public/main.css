@@ -38,14 +38,10 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 800;
-  font-family: var(--font-family-secondary);
 }
 
-h1 {
-  border-bottom: 8px solid var(--accent-color);
-  padding-bottom: 8px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+h2 {
+  font-family: var(--font-family-secondary);
 }
 
 h3 {
