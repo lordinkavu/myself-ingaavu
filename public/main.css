@@ -16,11 +16,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: linear-gradient(
-    to right,
-    rgb(255, 228, 230),
-    rgb(204, 251, 241)
-  );
+  background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
   color: var(--font-color-light);
   font-family: var(--font-family-primary);
   font-weight: 300;
